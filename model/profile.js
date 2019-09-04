@@ -9,11 +9,15 @@ const profileSchema = new Schema({
   describe: {
     type: String
   },
-  incode: {
+  income: {
     type: String,
     required: true
   },
   cash: {
+    type: String,
+    required: true
+  },
+  expend: {
     type: String,
     required: true
   },
