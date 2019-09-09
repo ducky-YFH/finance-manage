@@ -36,7 +36,7 @@ router.post('/register', (req, res) => {
 			if (user) {
 				return res.status(400).json("邮箱已被注册" );
 			} else {
-				const avatar = gravatar.url(req.body.email, { s: '200', r: 'g', d: 'default' });
+        const avatar = gravatar.url(req.body.email, { s: '200', r: 'Pg', d: 'retro' }, true);
 				const newUser = new User({
 					name: req.body.name,
 					email: req.body.email,
@@ -70,7 +70,7 @@ router.post("/login", (req, res) => {
 	User.findOne({ email })
 		.then(user => {
 			if (!user) {
-				return res.status(404).json("用户不存在！")
+				return res.status(400).json("用户不存在！")
 			}
 			// 密码匹配
 			bcrypt.compare(password, user.password) //输入密码和数据库密码匹配
