@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#app{
+#app {
   width: 100%;
   height: 100%;
 }

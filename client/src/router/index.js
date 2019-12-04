@@ -46,6 +46,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
+  // !会对后面的变量进行转换, 如果变量为undefined或者null则转为true，其余一律为false，所以两个!!就是如果有数据就转为false然后再用一个!转回true
   const isLogin = !!localStorage.dhsToken
   if (to.path === '/login' || to.path === '/register') {
     next()
