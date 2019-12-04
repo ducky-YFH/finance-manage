@@ -15,5 +15,5 @@
 - `npm run dev` 开启项目
 
 ## 图片预览
-![avatar](../finance-manage/preview/图片预览2.png)
-![avatar](../finance-manage/preview/图片预览.png)
+![preview](https://raw.githubusercontent.com/ducky-YFH/finance-manage/master/preview/图片预览.png)
+![preview](https://raw.githubusercontent.com/ducky-YFH/finance-manage/master/preview/图片预览2.png)
